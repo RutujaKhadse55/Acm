@@ -5,12 +5,15 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import EventsPage from './pages/EventsPage';
 import TeamPage from './pages/TeamPage';
+import BackgroundBlobs from './components/BackgroundBlobs';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen" style={{ background: '#030712' }}>
+      <div className="flex flex-col min-h-screen" >
+        <BackgroundBlobs />
         <Navbar />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<EventsPage />} />

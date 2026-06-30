@@ -127,6 +127,7 @@ export default function Achievements() {
                 className="glass-card hover-glow"
                 style={{
                   padding: '28px',
+                  background: '#0e1424',
                   display: 'flex',
                   flexDirection: 'row',
                   flexWrap: 'wrap',
