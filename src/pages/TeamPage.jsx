@@ -37,7 +37,7 @@ const leadsTeam = [
   { name: 'Name', role: 'Lead', domain: 'Social Media', image: '/image/socialmediateam/lead.jpg', linkedin: '#', github: '#', email: 'social@acm.org' },
 ];
 
-const teamHeroImage = 'image/teamacm.jpg';
+const teamHeroImage = 'Images/teamacm.jpg';
 
 const maleMembers = [
   { name: 'Rohan Sharma', role: 'Web Development Lead', image: '/image/webteam/lead.jpg', linkedin: '#', github: '#', email: 'web@acm.org', bio: 'Architecting fast, responsive web systems and state-of-the-art interactive platforms.' },
