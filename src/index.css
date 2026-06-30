@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Orbitron", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --color-navy: #030712;
+  --color-sky-accent: #38bdf8;
+  --color-sky-dark: #0ea5e9;
+  --color-glass: rgba(255,255,255,0.04);
+  --color-glass-border: rgba(56,189,248,0.18);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #030712;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #030712; }
+::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 3px; }
+
+/* Gallery infinite scroll keyframes */
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes scrollRight {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.gallery-row-left  { animation: scrollLeft  var(--duration, 40s) linear infinite; }
+.gallery-row-right { animation: scrollRight var(--duration, 30s) linear infinite; }
+
+.gallery-row-left:hover,
+.gallery-row-right:hover { animation-play-state: paused; }
+
+/* Glass card */
+.glass-card {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56,189,248,0.15);
+  border-radius: 16px;
+}
+
+/* Blue glow on hover */
+.hover-glow:hover {
+  box-shadow: 0 0 24px rgba(56,189,248,0.35), 0 0 0 1px rgba(56,189,248,0.45);
+  border-color: rgba(56,189,248,0.45);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Membership button */
+.membership-btn-premium {
+  background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 50%, #0284c7 100%);
+  color: #030712;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.membership-btn-premium::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(255,255,255,0.15), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+.membership-btn-premium:hover::after { transform: translateX(100%); }
+.membership-btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(56,189,248,0.5), 0 0 0 1px rgba(56,189,248,0.3);
+}
+
+/* Section fade-in base */
+.section-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Progress bar animation */
+@keyframes progressFill {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
