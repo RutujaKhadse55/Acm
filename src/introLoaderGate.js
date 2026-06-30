@@ -124,6 +124,8 @@ export function createIntroLoaderGate(options = {}) {
       } finally {
         // Ensure the app becomes visible even if intro errors.
         rootEl.style.visibility = 'visible';
+        rootEl.style.background = '';
+        document.body.style.background = '';
       }
 
       // Mount real app.

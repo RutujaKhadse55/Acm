@@ -101,21 +101,6 @@ export default function Hero() {
 
 
 
-        {/* Divider */}
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          custom={0.5}
-          className="mt-8 flex items-center gap-4"
-        >
-          <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#38bdf8] opacity-60" />
-          <div
-            className="w-2 h-2 rounded-full bg-[#38bdf8]"
-            style={{ boxShadow: '0 0 10px #38bdf8' }}
-          />
-          <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#38bdf8] opacity-60" />
-        </motion.div>
 
         {/* CTA Buttons */}
         <motion.div
@@ -140,7 +125,7 @@ export default function Hero() {
             href="https://www.acm.org/membership/join"
             target="_blank"
             rel="noreferrer"
-            className="text-sm font-semibold tracking-widest uppercase text-[#38bdf8] border border-[#38bdf8]/40 rounded-lg px-8 py-3 transition-all duration-300 hover:bg-[#38bdf8]/10 hover:border-[#38bdf8]"
+            className="text-sm font-semibold tracking-widest uppercase text-[#38bdf8] border border-[#38bdf8]/80 rounded-lg px-8 py-3 transition-all duration-300 hover:bg-[#38bdf8]/10 hover:border-[#38bdf8]"
             style={{ fontFamily: 'Orbitron, sans-serif', fontSize: '0.9rem' }}
           >
             Join ACM

@@ -1,6 +1,40 @@
 import { useMemo, useState } from 'react';
 
-const GALLERY_IMAGES = Array.from({ length: 12 }, (_, i) => `/Images/gallery/img${i + 1}.jpg`);
+const GALLERY_IMAGES = [
+  '/Images/gallery/1.jpg',
+  '/Images/gallery/2.jpeg',
+  '/Images/gallery/2.jpg',
+  '/Images/gallery/3.jpeg',
+  '/Images/gallery/3.jpg',
+  '/Images/gallery/4.jpeg',
+  '/Images/gallery/5.jpg',
+  '/Images/gallery/6.jpg',
+  '/Images/gallery/7.jpg',
+  '/Images/gallery/8.jpg',
+  '/Images/gallery/CD1.JPG',
+  '/Images/gallery/CD2.JPG',
+  '/Images/gallery/CD3.JPG',
+  '/Images/gallery/CD4.jpg',
+  '/Images/gallery/CD5.JPG',
+  '/Images/gallery/CD6.JPG',
+  '/Images/gallery/CD7.JPG',
+  '/Images/gallery/CD8.jpg',
+  '/Images/gallery/Childrensday.jpg',
+  '/Images/gallery/Logica1.jpg',
+  '/Images/gallery/Logica2.jpg',
+  '/Images/gallery/Logica3.jpg',
+  '/Images/gallery/Logica4.jpg',
+  '/Images/gallery/Logica5.jpg',
+  '/Images/gallery/Logica6.jpg',
+  '/Images/gallery/Logica7.jpg',
+  '/Images/gallery/Pradyot1.jpg',
+  '/Images/gallery/Pradyot2.jpg',
+  '/Images/gallery/Pradyot3.jpg',
+  '/Images/gallery/Pradyot4.jpg',
+  '/Images/gallery/Pradyot5.jpg',
+  '/Images/gallery/figma.png',
+  '/Images/gallery/freshmansession.jpg',
+];
 
 function shuffle(arr) {
   const a = [...arr];
