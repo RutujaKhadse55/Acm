@@ -9,21 +9,14 @@ import { useState } from 'react';
    ──────────────────────────────────────────────────────── */
 
 const AWARDS = [
-  {
-    image: '/Images/award.png',
-    title: 'Best Student Chapter Award',
-    description:
-      'Recognized as the Best Student Chapter for outstanding contributions to technical education, community outreach, and innovative events across the Maharashtra region.',
-    year: '2024',
-    badge: 'Gold Tier',
-  },
+
   {
     image: '/Images/award1.jpg',
-    title: 'Excellence in Innovation',
+    title: 'Outstanding Emerging Chapter Award 2022',
     description:
-      'Awarded for hosting cutting-edge hackathons, workshops, and seminars that fostered a culture of creativity and problem-solving among students.',
-    year: '2024',
-    badge: 'Distinguished',
+      'The JSPM RSCOE ACM Student Chapter was honored with the Outstanding Emerging Chapter Award 2022 by the Association for Computing Machinery (ACM India) in recognition of its exceptional contributions to innovation, technical excellence, and student engagement. This prestigious national award reflects our commitment to fostering learning, leadership, and a thriving computing community, inspiring us to achieve even greater milestones in the future.',
+    year: '2022',
+    badge: 'Excellence',
   },
 ];
 

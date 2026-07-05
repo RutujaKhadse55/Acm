@@ -14,36 +14,36 @@ const facultyCoordinator = {
   name: 'Dr. Name Surname',
   role: 'Faculty Coordinator',
   department: 'Department of Computer Engineering',
-  image: '/Images/niraj.jpg',
+  image: '/Images/mam.jpeg',
   linkedin: '#',
   bio: 'Guiding the chapter with a steady hand — turning curious students into builders, and builders into leaders.',
 };
 
 const coreTeam = [
-  { name: 'Name', role: 'Chair', department: 'Core Team', image: '/image/coreteam/chair.jpg', linkedin: '#', github: '#', email: 'chair@acm.org', portfolio: '#', bio: 'Sets the chapter\u2019s direction and keeps every team rowing in sync.' },
-  { name: 'Name', role: 'Vice Chair', department: 'Core Team', image: '/image/coreteam/vice-chair.jpg', linkedin: '#', github: '#', email: 'vicechair@acm.org', portfolio: '#', bio: 'Right hand to the Chair, owns execution across all department leads.' },
-  { name: 'Name', role: 'President', department: 'Core Team', image: '/image/coreteam/president.jpg', linkedin: '#', github: '#', email: 'president@acm.org', portfolio: '#', bio: 'Represents the chapter externally and drives long-term strategy.' },
-  { name: 'Name', role: 'Secretary', department: 'Core Team', image: '/image/coreteam/secretary.jpg', linkedin: '#', github: '#', email: 'secretary@acm.org', portfolio: '#', bio: 'Keeps records, minutes, and communication airtight.' },
-  { name: 'Name', role: 'Treasurer', department: 'Core Team', image: '/image/coreteam/treasurer.jpg', linkedin: '#', github: '#', email: 'treasurer@acm.org', portfolio: '#', bio: 'Manages budgets, sponsorships, and every rupee in between.' },
-  { name: 'Name', role: 'Joint Secretary', department: 'Core Team', image: '/image/coreteam/joint-secretary.jpg', linkedin: '#', github: '#', email: 'jointsec@acm.org', portfolio: '#', bio: 'Supports the Secretary and keeps documentation moving.' },
+  { name: 'Name', role: 'Chair', department: 'Core Team', image: '/Images/chair.jpeg', linkedin: '#', github: '#', email: 'chair@acm.org', portfolio: '#', bio: 'Sets the chapter\u2019s direction and keeps every team rowing in sync.' },
+  { name: 'Name', role: 'Vice Chair', department: 'Core Team', image: '/Images/vicechair.jpeg', linkedin: '#', github: '#', email: 'vicechair@acm.org', portfolio: '#', bio: 'Right hand to the Chair, owns execution across all department leads.' },
+
+  { name: 'Name', role: 'Secretary', department: 'Core Team', image: '/Images/secretary.jpeg', linkedin: '#', github: '#', email: 'secretary@acm.org', portfolio: '#', bio: 'Keeps records, minutes, and communication airtight.' },
+  { name: 'Name', role: 'Treasurer', department: 'Core Team', image: '/Images/treasurer.jpeg', linkedin: '#', github: '#', email: 'treasurer@acm.org', portfolio: '#', bio: 'Manages budgets, sponsorships, and every rupee in between.' },
+  { name: 'Name', role: 'Joint Secretary', department: 'Core Team', image: '/Images/jointsecretary.jpeg', linkedin: '#', github: '#', email: 'jointsec@acm.org', portfolio: '#', bio: 'Supports the Secretary and keeps documentation moving.' },
 ];
 
 const leadsTeam = [
-  { name: 'Name', role: 'Lead', domain: 'Web Development', image: '/image/webteam/lead.jpg', linkedin: '#', github: '#', email: 'web@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'Design', image: '/image/designteam/lead.jpg', linkedin: '#', github: '#', email: 'design@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'Video Editing', image: '/image/videoeditingteam/lead.jpg', linkedin: '#', github: '#', email: 'video@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'Content', image: '/image/contentteam/lead.jpg', linkedin: '#', github: '#', email: 'content@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'Event Management', image: '/image/eventmanagementteam/lead.jpg', linkedin: '#', github: '#', email: 'events@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'Social Media', image: '/image/socialmediateam/lead.jpg', linkedin: '#', github: '#', email: 'social@acm.org' },
+  { name: 'Name', role: 'Lead', domain: 'Web Development', image: '/Images/web.jpeg', linkedin: '#', github: '#', email: 'web@acm.org' },
+  { name: 'Name', role: 'Lead', domain: 'Design', image: '/Images/design.jpeg', linkedin: '#', github: '#', email: 'design@acm.org' },
+  { name: 'Name', role: 'Lead', domain: 'PR', image: '/Images/pr.jpeg', linkedin: '#', github: '#', email: 'pr@acm.org' },
+  { name: 'Name', role: 'Lead', domain: 'Content', image: '/Images/content.jpeg', linkedin: '#', github: '#', email: 'content@acm.org' },
+  { name: 'Name', role: 'Lead', domain: 'Sponsorship', image: '/Images/sponsor.jpeg', linkedin: '#', github: '#', email: 'sponsor@acm.org' },
+  { name: 'Name', role: 'Lead', domain: 'Social Media', image: '/Images/social.jpeg', linkedin: '#', github: '#', email: 'social@acm.org' },
 ];
 
-const teamHeroImage = 'Images/teamacm.jpg';
+const teamHeroImage = 'Images/events/maingroup.jpeg';
 
 const maleMembers = [
-  { name: 'Rohan Sharma', role: 'Web Development Lead', image: '/image/webteam/lead.jpg', linkedin: '#', github: '#', email: 'web@acm.org', bio: 'Architecting fast, responsive web systems and state-of-the-art interactive platforms.' },
-  { name: 'Aditya Patel', role: 'Video Editing Lead', image: '/image/videoeditingteam/lead.jpg', linkedin: '#', github: '#', email: 'video@acm.org', bio: 'Bringing stories to life through high-impact, cinematic edits and motion design.' },
-  { name: 'Ishaan Deshmukh', role: 'Content Lead', image: '/image/contentteam/lead.jpg', linkedin: '#', github: '#', email: 'content@acm.org', bio: 'Crafting compelling narratives, newsletters, and engaging documentation.' },
-  { name: 'Kabir Verma', role: 'Treasurer', image: '/image/coreteam/treasurer.jpg', linkedin: '#', github: '#', email: 'treasurer@acm.org', bio: 'Directing resource allocation, budgeting, and sponsorship relations.' },
+  { name: 'Rohan Sharma', role: 'Web Development Lead', image: '/Images/web.jpeg', linkedin: '#', github: '#', email: 'web@acm.org', bio: 'Architecting fast, responsive web systems and state-of-the-art interactive platforms.' },
+  { name: 'Aditya Patel', role: 'Video Editing Lead', image: '/Images/video.jpeg', linkedin: '#', github: '#', email: 'video@acm.org', bio: 'Bringing stories to life through high-impact, cinematic edits and motion design.' },
+  { name: 'Ishaan Deshmukh', role: 'Content Lead', image: '/Images/content.jpeg', linkedin: '#', github: '#', email: 'content@acm.org', bio: 'Crafting compelling narratives, newsletters, and engaging documentation.' },
+  { name: 'Kabir Verma', role: 'Treasurer', image: '/Images/treasurer.jpeg', linkedin: '#', github: '#', email: 'treasurer@acm.org', bio: 'Directing resource allocation, budgeting, and sponsorship relations.' },
   { name: 'Aarav Nair', role: 'Web Developer', image: '/image/webteam/member1.jpg', linkedin: '#', github: '#', email: 'aarav@acm.org', bio: 'Coding pixel-perfect UI elements and solid client-side logic.' },
   { name: 'Siddharth Rao', role: 'Design Co-Lead', image: '/image/designteam/member1.jpg', linkedin: '#', github: '#', email: 'siddharth@acm.org', bio: 'Creating sleek visual style guides and premium graphic assets.' }
 ];
@@ -370,11 +370,9 @@ function TeamHero() {
           <div className="hero-morph__vignette" />
 
           <div className={`hero-morph__panel ${unfolded ? 'hero-morph__panel--in' : ''}`} style={{ transitionDelay: '2.0s' }}>
-            <div className="hero-morph__panel-inner" style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(56, 189, 248, 0.18)' }}>
+            <div className="hero-morph__panel-inner" style={{ background: 'rgba(255, 255, 255, 0.26)', borderColor: 'rgba(56, 189, 248, 0.18)' }}>
               <div className="hero-morph__title">OUR TEAM</div>
-              <div className="hero-morph__subtitle">
-                Meet the passionate students behind the RSCOE ACM Student Chapter.
-              </div>
+
             </div>
           </div>
         </div>

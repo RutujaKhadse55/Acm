@@ -11,9 +11,9 @@ import { useState, useEffect, useRef } from 'react';
 
 const ABOUT_IMAGES = [
   { src: '/Images/Pradyot_2.0/1.jpg', emoji: '🏫' },
-  { src: '/Images/ar.jpeg', emoji: '💻' },
-  { src: '/Images/girllead.jpeg', emoji: '🤝' },
-  { src: '/Images/boylead.jpeg', emoji: '🏆' },
+  { src: '/Images/acmrscoelogo.png', emoji: '💻' },
+  { src: '/Images/events/shortgrp.jpeg', emoji: '🤝' },
+  { src: '/Images/events/grp.jpeg', emoji: '🏆' },
 ];
 
 const HIGHLIGHTS = [

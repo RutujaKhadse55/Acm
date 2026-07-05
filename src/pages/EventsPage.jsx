@@ -211,6 +211,69 @@ const EVENTS = [
     link: '#',
     tag: 'Cultural',
   },
+  {
+    id: 12,
+    title: 'Meet and Greet',
+    date: '2024',
+    location: 'JSPM RSCOE, Pune',
+    description: 'ACM RSCOE organized a special Meet and Greet session for its members. The event served as a platform for students to connect with chapter leads, share ideas, and get acquainted with the upcoming activities and initiatives planned for the year.',
+    image: '/Images/aluminimeet/a1.jpeg',
+    gallery: [
+      '/Images/aluminimeet/a1.jpeg',
+      '/Images/aluminimeet/a2.jpeg',
+      '/Images/ealuminimeet/a3.jpeg',
+    ],
+    link: '#',
+    tag: 'Seminar',
+  },
+  {
+    id: 13,
+    title: 'Logica 3.O',
+    date: '2024',
+    location: 'JSPM RSCOE, Pune',
+    description: 'Logica 3.0 is ACM RSCOE\'s flagship logic and problem-solving competition, challenging participants with intricate puzzles, algorithmic thinking rounds, and real-world coding scenarios. A high-energy event that tests both creativity and technical depth.',
+
+    image: '/Images/logica3/l1.jpeg',
+    gallery: [
+      '/Images/logica3/l1.jpeg',
+      '/Images/logica3/l2.jpeg',
+      '/Images/events/grp.jpeg',
+    ],
+    link: '#',
+    tag: 'Event',
+  },
+  {
+    id: 14,
+    title: 'Vibe Check Arena',
+    date: '2025',
+    location: 'JSPM RSCOE, Pune',
+    description: 'Vibe Check Arena is ACM RSCOE\'s flagship logic and problem-solving competition, challenging participants with intricate puzzles, algorithmic thinking rounds, and real-world coding scenarios. A high-energy event that tests both creativity and technical depth.',
+
+    image: '/Images/vibecheckarena/v1.jpeg',
+    gallery: [
+      '/Images/vibecheckarena/v1.jpeg',
+      '/Images/vibecheckarena/v1.jpeg',
+      '/Images/vibecheckarena/v1.jpeg',
+    ],
+    link: '#',
+    tag: 'Event',
+  },
+  {
+    id: 15,
+    title: 'Expert Session',
+    date: '2025',
+    location: 'JSPM RSCOE, Pune',
+    description: 'An insightful session featuring industry leaders and subject matter experts sharing their knowledge, experiences, and perspectives on emerging trends in technology. A valuable opportunity for students to gain industry insights and expand their professional network.',
+
+    image: '/Images/expertsession/e1.jpeg',
+    gallery: [
+      '/Images/expertsession/e1.jpeg',
+      '/Images/expertsession/e2.jpeg',
+      '/Images/expertsession/e3.jpeg',
+    ],
+    link: '#',
+    tag: 'session',
+  },
 ];
 
 const INTERVAL_MS = 5000;
@@ -285,12 +348,12 @@ function CardImage({ src, alt }) {
 
 // ─── Main Events Page ──────────────────────────────────────────────────────────
 export default function EventsPage() {
-  const [active, setActive]     = useState(0);
+  const [active, setActive] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [progress, setProgress] = useState(0);
-  const intervalRef             = useRef(null);
-  const progressRef             = useRef(null);
-  const progressStart           = useRef(null);
+  const intervalRef = useRef(null);
+  const progressRef = useRef(null);
+  const progressStart = useRef(null);
 
   const goTo = useCallback((index) => {
     setActive(index);
@@ -478,11 +541,11 @@ export default function EventsPage() {
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#38bdf8', fontSize: '0.875rem' }}>
-                    <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>
                     <span style={{ fontWeight: 500, letterSpacing: '0.02em' }}>{event.date}</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.55)', fontSize: '0.875rem' }}>
-                    <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                     <span>{event.location}</span>
                   </div>
                 </div>
