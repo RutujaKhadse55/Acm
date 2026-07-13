@@ -193,7 +193,7 @@ const ACHIEVEMENTS = [
     date: '2026', college: 'National Level', duration: 'Hackathon',
     project: 'RescueNet',
     members: ['Snehal Kalkote'],
-    description: 'We developed RescueNet, a disaster response web application during the Google Gen AI Hackathon, where our team won 2nd Place. We used Google AI Studio for prompt-assisted development, along with Gemini API, Google Vision API, and Google Maps to build an AI-powered emergency assistance platform with SOS alerts, live location sharing, and disaster image analysis.',
+    description: 'Developed RescueNet, a disaster response web application during the Google Gen AI Hackathon, where our team won 2nd Place. We used Google AI Studio for prompt-assisted development, along with Gemini API, Google Vision API, and Google Maps to build an AI-powered emergency assistance platform with SOS alerts, live location sharing, and disaster image analysis.',
     tags: ['Artificial Intelligence', 'Hackathon', '2nd Prize', 'Innovation'],
     highlight: '🌟 Multiple-time National Hackathon Champions',
     gradient: 'linear-gradient(135deg, rgba(251,191,36,0.14), rgba(168,85,247,0.07))',
@@ -201,6 +201,20 @@ const ACHIEVEMENTS = [
     images: ['/Images/achievements/snehal1.jpeg', '/Images/achievements/snehal2.jpeg',]
   },
 
+  {
+    id: 6, emoji: '🏆',
+    title: 'Hacknova- 2nd Prize',
+    badge: '2nd Prize', badgeColor: '#fbbf24',
+    date: '2026', college: 'National Level', duration: 'Hackathon',
+    project: 'Share Cycle',
+    members: ['Vivek Dalimbkar'],
+    description: 'ShareCycle" is a Google-powered, AI-driven peer-to-peer rental platform designed to create a sustainable, community-focused circular economy. It enables individuals to monetize their underutilized possessions by renting them out to trusted members of their local community, reducing waste and creating supplemental income..',
+    tags: ['Artificial Intelligence', 'Hackathon', '2nd Prize', 'Innovation'],
+
+    gradient: 'linear-gradient(135deg, rgba(251,191,36,0.14), rgba(168,85,247,0.07))',
+    borderColor: 'rgba(251,191,36,0.35)', glowColor: 'rgba(251,191,36,0.2)',
+    images: ['/Images/vivek1.jpeg', '/Images/vivek2.jpeg',]
+  },
 ];
 
 /* ─────────────────────────────────────────────

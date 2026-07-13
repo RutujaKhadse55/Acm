@@ -11,7 +11,7 @@ import { useTilt } from '../hooks/useTilt';
    ============================================================ */
 
 const facultyCoordinator = {
-  name: 'Dr. Name Surname',
+  name: 'Prof. Ashwini Bhosale',
   role: 'Faculty Coordinator',
   department: 'Department of Computer Engineering',
   image: '/Images/mam.jpeg',
@@ -23,9 +23,9 @@ const coreTeam = [
   { name: 'Shreeyash Pawar', role: 'Chair', department: 'Core Team', image: '/Images/chair.jpeg', linkedin: '#', github: '#', email: 'chair@acm.org', portfolio: '#', bio: 'Sets the chapter\u2019s direction and keeps every team rowing in sync.' },
   { name: 'Disha Sattesa ', role: 'Vice Chair', department: 'Core Team', image: '/Images/vicechair.jpeg', linkedin: '#', github: '#', email: 'vicechair@acm.org', portfolio: '#', bio: 'Right hand to the Chair, owns execution across all department leads.' },
 
-  { name: 'Anshita Baduge', role: 'Secretary', department: 'Core Team', image: '/Images/secretary.jpeg', linkedin: '#', github: '#', email: 'secretary@acm.org', portfolio: '#', bio: 'Keeps records, minutes, and communication airtight.' },
+  { name: 'Pranav Kale', role: 'Secretary', department: 'Core Team', image: '/Images/secretary.jpeg', linkedin: '#', github: '#', email: 'secretary@acm.org', portfolio: '#', bio: 'Keeps records, minutes, and communication airtight.' },
   { name: 'Swayam Deshmukh ', role: 'Treasurer', department: 'Core Team', image: '/Images/treasurer.jpeg', linkedin: '#', github: '#', email: 'treasurer@acm.org', portfolio: '#', bio: 'Manages budgets, sponsorships, and every rupee in between.' },
-  { name: 'Pranav Kale', role: 'Joint Secretary', department: 'Core Team', image: '/Images/jointsecretary.jpeg', linkedin: '#', github: '#', email: 'jointsec@acm.org', portfolio: '#', bio: 'Supports the Secretary and keeps documentation moving.' },
+  { name: 'Anshita Baduge', role: 'Joint Secretary', department: 'Core Team', image: '/Images/jointsecretary.jpeg', linkedin: '#', github: '#', email: 'jointsec@acm.org', portfolio: '#', bio: 'Supports the Secretary and keeps documentation moving.' },
 ];
 
 const leadsTeam = [
