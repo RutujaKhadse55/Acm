@@ -122,9 +122,9 @@ export default function Hero() {
             Explore
           </a>
           <a
-            href="mailto:rutujakhadse2006@gmail.com?subject=Request%20to%20Join%20ACM&body=Dear%20ACM%20Team%2C%0A%0AI%20am%20writing%20to%20request%20to%20join%20the%20ACM%20Student%20Chapter.%20Please%20guide%20me%20on%20the%20next%20steps%20for%20registration%20and%20membership.%0A%0AThank%20you!"
-            className="text-sm font-semibold tracking-widest uppercase text-[#38bdf8] border border-[#38bdf8]/80 rounded-lg px-8 py-3 transition-all duration-300 hover:bg-[#38bdf8]/10 hover:border-[#38bdf8]"
-            style={{ fontFamily: 'Orbitron, sans-serif', fontSize: '0.9rem' }}
+            href="/apply"
+            className="membership-btn-premium"
+            style={{ fontSize: '0.75rem' }}
           >
             Join ACM
           </a>

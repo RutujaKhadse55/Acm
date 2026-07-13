@@ -116,7 +116,7 @@ export default function ApplyPage() {
 
     // Feel free to register a free key at https://web3forms.com/ and paste it below
     // to enable silent background email sending directly to rutujakhadse2006@gmail.com
-    const WEB3FORMS_ACCESS_KEY = "a6c06616-834e-4d47-8c90-a4de5b0e54f5";
+    const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "a6c06616-834e-4d47-8c90-a4de5b0e54f5";
 
     const handleSubmit = async (e) => {
         e.preventDefault();
