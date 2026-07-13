@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "Events", to: "/events" },
-  { label: "Achievements", to: "/#achievements" },
+  { label: "Achievements", to: "/achievements" },
   { label: "Team", to: "/team" },
   { label: "About", to: "/#about" },
 ];
@@ -161,16 +161,27 @@ export default function Navbar() {
           })}
         </ul>
 
-        {/* Hamburger */}
+        {/* Right side: Join CTA + Hamburger */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '12px' }}>
+          {/* Join CTA — hidden on mobile */}
+          <Link
+            to="/apply"
+            className="nav-join-btn"
+          >
+            <span style={{ fontSize: '0.8rem' }}>🚀</span>
+            Join ACM RSCOE
+          </Link>
 
-        <button
-          className="nav-hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {[1, 2, 3].map((i) => (
-            <span key={i} />
-          ))}
-        </button>
+          {/* Hamburger */}
+          <button
+            className="nav-hamburger"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {[1, 2, 3].map((i) => (
+              <span key={i} />
+            ))}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
@@ -388,6 +399,12 @@ display:flex;
 
 }
 
+.nav-join-btn{
+
+display:none;
+
+}
+
 }
 
 @media(min-width:768px){
@@ -398,6 +415,35 @@ display:none;
 
 }
 
+}
+
+.nav-join-btn{
+display:inline-flex;
+align-items:center;
+gap:6px;
+padding:7px 16px;
+border-radius:999px;
+background:linear-gradient(135deg,rgba(56,189,248,0.12),rgba(167,139,250,0.1));
+border:1px solid rgba(56,189,248,0.35);
+color:#fff;
+font-family:Orbitron,sans-serif;
+font-size:0.58rem;
+font-weight:700;
+letter-spacing:0.15em;
+text-transform:uppercase;
+text-decoration:none;
+transition:all 0.3s ease;
+white-space:nowrap;
+backdrop-filter:blur(8px);
+-webkit-backdrop-filter:blur(8px);
+}
+
+.nav-join-btn:hover{
+background:linear-gradient(135deg,rgba(56,189,248,0.22),rgba(167,139,250,0.18));
+border-color:rgba(56,189,248,0.65);
+color:#7dd3fc;
+transform:translateY(-1px);
+box-shadow:0 0 18px rgba(56,189,248,0.25),0 4px 12px rgba(56,189,248,0.15);
 }
 
       `}</style>

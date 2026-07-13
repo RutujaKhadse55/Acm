@@ -20,21 +20,21 @@ const facultyCoordinator = {
 };
 
 const coreTeam = [
-  { name: 'Name', role: 'Chair', department: 'Core Team', image: '/Images/chair.jpeg', linkedin: '#', github: '#', email: 'chair@acm.org', portfolio: '#', bio: 'Sets the chapter\u2019s direction and keeps every team rowing in sync.' },
-  { name: 'Name', role: 'Vice Chair', department: 'Core Team', image: '/Images/vicechair.jpeg', linkedin: '#', github: '#', email: 'vicechair@acm.org', portfolio: '#', bio: 'Right hand to the Chair, owns execution across all department leads.' },
+  { name: 'Shreeyash Pawar', role: 'Chair', department: 'Core Team', image: '/Images/chair.jpeg', linkedin: '#', github: '#', email: 'chair@acm.org', portfolio: '#', bio: 'Sets the chapter\u2019s direction and keeps every team rowing in sync.' },
+  { name: 'Disha Sattesa ', role: 'Vice Chair', department: 'Core Team', image: '/Images/vicechair.jpeg', linkedin: '#', github: '#', email: 'vicechair@acm.org', portfolio: '#', bio: 'Right hand to the Chair, owns execution across all department leads.' },
 
-  { name: 'Name', role: 'Secretary', department: 'Core Team', image: '/Images/secretary.jpeg', linkedin: '#', github: '#', email: 'secretary@acm.org', portfolio: '#', bio: 'Keeps records, minutes, and communication airtight.' },
-  { name: 'Name', role: 'Treasurer', department: 'Core Team', image: '/Images/treasurer.jpeg', linkedin: '#', github: '#', email: 'treasurer@acm.org', portfolio: '#', bio: 'Manages budgets, sponsorships, and every rupee in between.' },
-  { name: 'Name', role: 'Joint Secretary', department: 'Core Team', image: '/Images/jointsecretary.jpeg', linkedin: '#', github: '#', email: 'jointsec@acm.org', portfolio: '#', bio: 'Supports the Secretary and keeps documentation moving.' },
+  { name: 'Anshita Baduge', role: 'Secretary', department: 'Core Team', image: '/Images/secretary.jpeg', linkedin: '#', github: '#', email: 'secretary@acm.org', portfolio: '#', bio: 'Keeps records, minutes, and communication airtight.' },
+  { name: 'Swayam Deshmukh ', role: 'Treasurer', department: 'Core Team', image: '/Images/treasurer.jpeg', linkedin: '#', github: '#', email: 'treasurer@acm.org', portfolio: '#', bio: 'Manages budgets, sponsorships, and every rupee in between.' },
+  { name: 'Pranav Kale', role: 'Joint Secretary', department: 'Core Team', image: '/Images/jointsecretary.jpeg', linkedin: '#', github: '#', email: 'jointsec@acm.org', portfolio: '#', bio: 'Supports the Secretary and keeps documentation moving.' },
 ];
 
 const leadsTeam = [
-  { name: 'Name', role: 'Lead', domain: 'Web Development', image: '/Images/web.jpeg', linkedin: '#', github: '#', email: 'web@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'Design', image: '/Images/design.jpeg', linkedin: '#', github: '#', email: 'design@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'PR', image: '/Images/pr.jpeg', linkedin: '#', github: '#', email: 'pr@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'Content', image: '/Images/content.jpeg', linkedin: '#', github: '#', email: 'content@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'Sponsorship', image: '/Images/sponsor.jpeg', linkedin: '#', github: '#', email: 'sponsor@acm.org' },
-  { name: 'Name', role: 'Lead', domain: 'Social Media', image: '/Images/social.jpeg', linkedin: '#', github: '#', email: 'social@acm.org' },
+  { name: 'Bhim Rathod', role: 'Lead', domain: 'Web Development', image: '/Images/web.jpeg', linkedin: '#', github: '#', email: 'web@acm.org' },
+  { name: 'Samiksha Chavan', role: 'Lead', domain: 'Design', image: '/Images/design.jpeg', linkedin: '#', github: '#', email: 'design@acm.org' },
+  { name: 'Swarupa Bamane', role: 'Lead', domain: 'PR', image: '/Images/pr.jpeg', linkedin: '#', github: '#', email: 'pr@acm.org' },
+  { name: 'Sana Shalju Jose', role: 'Lead', domain: 'Content', image: '/Images/content.jpeg', linkedin: '#', github: '#', email: 'content@acm.org' },
+  { name: 'Pramod Kanthale', role: 'Lead', domain: 'Sponsor', image: '/Images/sponsor.jpeg', linkedin: '#', github: '#', email: 'sponsor@acm.org' },
+  { name: 'Mrunal Jadhav', role: 'Lead', domain: 'Social Media', image: '/Images/social.jpeg', linkedin: '#', github: '#', email: 'social@acm.org' },
 ];
 
 const teamHeroImage = 'Images/events/maingroup.jpeg';
@@ -370,7 +370,7 @@ function TeamHero() {
           <div className="hero-morph__vignette" />
 
           <div className={`hero-morph__panel ${unfolded ? 'hero-morph__panel--in' : ''}`} style={{ transitionDelay: '2.0s' }}>
-            <div className="hero-morph__panel-inner" style={{ background: 'rgba(255, 255, 255, 0.26)', borderColor: 'rgba(56, 189, 248, 0.18)' }}>
+            <div className="hero-morph__panel-inner" style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(56, 189, 248, 0.18)' }}>
               <div className="hero-morph__title">OUR TEAM</div>
 
             </div>
@@ -380,108 +380,6 @@ function TeamHero() {
         <div className={`hero-morph__hint ${unfolded ? 'hero-morph__hint--in' : ''}`} style={{ opacity: unfolded ? 1 - progress * 1.4 : 0 }}>
 
         </div>
-      </div>
-    </div>
-  );
-}
-
-/* ============================================================
-   SPLIT COMMUNITY — ACM Boys / ACM Girls
-   ============================================================ */
-
-function SplitCard({ label, image, side, onClick }) {
-  const { ref: tiltRef, onMouseMove, onMouseLeave } = useTilt(3);
-
-  return (
-    <article
-      ref={tiltRef}
-      className={`split-card split-card--${side}`}
-      onMouseMove={onMouseMove}
-      onMouseLeave={onMouseLeave}
-      onClick={onClick}
-      role="button"
-      aria-label={`View ${label}`}
-      style={{
-        position: 'relative',
-        borderRadius: '24px',
-        border: '1px solid rgba(56, 189, 248, 0.18)',
-        background: 'rgba(255, 255, 255, 0.03)',
-        overflow: 'hidden',
-        boxShadow: '0 0 25px rgba(56, 189, 248, 0.08)',
-        cursor: 'pointer',
-        aspectRatio: '21/9',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        transition: 'all 0.4s cubic-bezier(0.25, 1, 0.5, 1)',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.5)';
-        e.currentTarget.style.boxShadow = '0 0 35px rgba(56, 189, 248, 0.28)';
-      }}
-      onMouseLeave={(e) => {
-        onMouseLeave();
-        e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.18)';
-        e.currentTarget.style.boxShadow = '0 0 25px rgba(56, 189, 248, 0.08)';
-      }}
-    >
-      <div className="split-card__shine" aria-hidden="true" />
-      <ParticleField count={8} />
-
-      <div style={{ width: '100%', height: '100%', overflow: 'hidden', position: 'relative' }}>
-        <PlaceholderImg src={image} alt={label} className="split-card__img" />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(3, 7, 18, 0.8) 0%, rgba(3, 7, 18, 0.2) 70%, transparent 100%)' }} />
-      </div>
-
-      <div className="split-card__meta" style={{
-        position: 'absolute',
-        bottom: '20px',
-        left: '24px',
-        zIndex: 2,
-        textAlign: 'left'
-      }}>
-        <div className="split-card__label" style={{
-          fontFamily: 'Orbitron, sans-serif',
-          fontWeight: 900,
-          color: '#fff',
-          fontSize: '1.25rem',
-          letterSpacing: '0.06em',
-          textShadow: '0 0 15px rgba(56, 189, 248, 0.5)'
-        }}>
-          {label}
-        </div>
-      </div>
-    </article>
-  );
-}
-
-function SplitCommunity({ onSelectTeam }) {
-  const [ref, inView] = useInView({ threshold: 0.15, once: true });
-
-  return (
-    <div
-      ref={ref}
-      className={`container-1300 split-community ${inView ? 'split-community--in' : ''}`}
-      style={{ padding: '60px 20px', position: 'relative' }}
-    >
-      <SectionTitle eyebrow="THE COMMUNITY" title="ACM" accentWord="COMMUNITY" />
-
-      <div className="split-community__grid" style={{ marginTop: '40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', position: 'relative' }}>
-        <div className="split-connector" />
-
-        <SplitCard
-          label="Male Team"
-          image="/Images/boylead.jpeg"
-          side="left"
-          onClick={() => onSelectTeam('male')}
-        />
-
-        <SplitCard
-          label="Female Team"
-          image="/Images/girllead.jpeg"
-          side="right"
-          onClick={() => onSelectTeam('female')}
-        />
       </div>
     </div>
   );
@@ -741,9 +639,7 @@ function PremiumCard({ person, index, variant }) {
 
         <div className="premium-card__social">
           <IconLink href={person.linkedin} label="LinkedIn" kind="linkedin" />
-          <IconLink href={person.github} label="GitHub" kind="github" />
-          <IconLink href={person.email ? `mailto:${person.email}` : null} label="Email" kind="email" />
-          {person.portfolio && <IconLink href={person.portfolio} label="Portfolio" kind="portfolio" />}
+
         </div>
       </div>
     </article>
@@ -1225,8 +1121,6 @@ export default function TeamPage() {
       `}</style>
 
       <TeamHero />
-
-      <SplitCommunity onSelectTeam={setActiveTeam} />
 
       <AnimatePresence>
         {activeTeam && (

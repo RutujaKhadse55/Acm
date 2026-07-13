@@ -6,7 +6,7 @@ const EVENTS = [
   {
     id: 1,
     title: 'Logica 2.0',
-    date: '2026',
+    date: '2023',
     location: 'JSPM RSCOE, Pune',
     description:
       'Logica 2.0 is ACM RSCOE\'s flagship logic and problem-solving competition, challenging participants with intricate puzzles, algorithmic thinking rounds, and real-world coding scenarios. A high-energy event that tests both creativity and technical depth.',
@@ -26,7 +26,7 @@ const EVENTS = [
   {
     id: 2,
     title: 'Pradyot',
-    date: '2025',
+    date: '2023',
     location: 'JSPM RSCOE, Pune',
     description:
       'Pradyot is ACM RSCOE\'s annual technical symposium — a celebration of innovation, engineering, and student talent. Packed with workshops, project exhibitions, expert talks, and exciting inter-college competitions across multiple domains.',
@@ -44,7 +44,7 @@ const EVENTS = [
   {
     id: 3,
     title: 'Pradyot 2.0',
-    date: '2026',
+    date: '2024',
     location: 'JSPM RSCOE, Pune',
     description:
       'The second edition of Pradyot returned bigger and bolder, featuring expanded competition tracks, a dedicated project showcase arena, and guest lectures from industry professionals. A landmark event on the RSCOE academic calendar.',
@@ -64,8 +64,8 @@ const EVENTS = [
   {
     id: 4,
     title: 'UIPath Workshop',
-    date: '2025',
-    location: 'CS Seminar Hall, RSCOE',
+    date: '2023',
+    location: 'FY Seminar Hall, RSCOE',
     description:
       'A hands-on RPA (Robotic Process Automation) workshop powered by UIPath, teaching students to automate repetitive workflows, build bots, and explore enterprise automation tools. Participants left with real project experience and industry certificates.',
     image: '/Images/UIPath/ui1.jpg',
@@ -103,7 +103,7 @@ const EVENTS = [
   {
     id: 6,
     title: 'Trinity',
-    date: '2025',
+    date: '2023',
     location: 'JSPM RSCOE, Pune',
     description:
       'Trinity is a unique three-pronged event fusing design, development, and deployment into one competition. Teams were challenged to conceive, build, and pitch a working product within a limited timeframe — simulating real startup dynamics.',
@@ -121,7 +121,7 @@ const EVENTS = [
   {
     id: 7,
     title: 'FY Induction',
-    date: '2025',
+    date: '2024',
     location: 'JSPM RSCOE Auditorium',
     description:
       'The First Year Induction is ACM RSCOE\'s welcoming ceremony for incoming students, offering them a glimpse into the chapter\'s vision, events, and opportunities. An energetic kickoff to the academic journey with interactive sessions and live demos.',
@@ -138,8 +138,8 @@ const EVENTS = [
   {
     id: 8,
     title: 'Figma Workshop',
-    date: '2025',
-    location: 'CS Lab, RSCOE',
+    date: '2024',
+    location: 'MBA seminar, RSCOE',
     description:
       'A beginner-to-intermediate Figma design workshop covering UI/UX fundamentals, wireframing, prototyping, and component-based design systems. Students walked away with portfolio-ready mockups and a strong foundation in modern design tools.',
     image: '/Images/figmaworkshop/figma.png',
@@ -199,7 +199,7 @@ const EVENTS = [
   {
     id: 11,
     title: 'Ganapati Celebration',
-    date: '2024',
+    date: '2023',
     location: 'JSPM RSCOE, Pune',
     description:
       'ACM RSCOE marked the Ganapati festival with a vibrant cultural celebration on campus, bringing the team together for decoration, rituals, and a community spirit event that strengthened bonds across the chapter.',
@@ -214,7 +214,7 @@ const EVENTS = [
   {
     id: 12,
     title: 'Meet and Greet',
-    date: '2024',
+    date: '2025',
     location: 'JSPM RSCOE, Pune',
     description: 'ACM RSCOE organized a special Meet and Greet session for its members. The event served as a platform for students to connect with chapter leads, share ideas, and get acquainted with the upcoming activities and initiatives planned for the year.',
     image: '/Images/aluminimeet/a1.jpeg',
@@ -228,10 +228,10 @@ const EVENTS = [
   },
   {
     id: 13,
-    title: 'Logica 3.O',
-    date: '2024',
+    title: 'Logica 5.O',
+    date: '2026',
     location: 'JSPM RSCOE, Pune',
-    description: 'Logica 3.0 is ACM RSCOE\'s flagship logic and problem-solving competition, challenging participants with intricate puzzles, algorithmic thinking rounds, and real-world coding scenarios. A high-energy event that tests both creativity and technical depth.',
+    description: 'Logica 5.0 is ACM RSCOE\'s flagship logic and problem-solving competition, challenging participants with intricate puzzles, algorithmic thinking rounds, and real-world coding scenarios. A high-energy event that tests both creativity and technical depth.',
 
     image: '/Images/logica3/l1.jpeg',
     gallery: [

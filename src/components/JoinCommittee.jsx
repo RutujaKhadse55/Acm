@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const ROLES = [
   { icon: '💡', title: 'Technical Lead', desc: 'Drive workshops, hackathons, and tech initiatives.' },
   { icon: '🎨', title: 'Design Team', desc: 'Craft branding, posters, and visual identity.' },
@@ -43,16 +45,14 @@ export default function JoinCommittee() {
             Become a driving force behind one of the most active ACM student chapters. Collaborate
             with like-minded peers, build industry connections, and shape the future of technology at RSCOE.
           </p>
-          <a
-            href="https://forms.gle"
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            to="/apply"
             className="membership-btn-premium"
             style={{ display: 'inline-block', fontSize: '0.72rem' }}
             aria-label="Apply to join the committee"
           >
             Apply Now
-          </a>
+          </Link>
         </div>
 
 

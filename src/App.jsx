@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage';
 import EventsPage from './pages/EventsPage';
 import TeamPage from './pages/TeamPage';
 import BackgroundBlobs from './components/BackgroundBlobs';
+import AchievementsPage from './pages/AchievementsPage';
+import ApplyPage from './pages/ApplyPage';
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/team" element={<TeamPage />} />
+          <Route path="/achievements" element={<AchievementsPage />} />
+          <Route path="/apply" element={<ApplyPage />} />
         </Routes>
         <Footer />
       </div>

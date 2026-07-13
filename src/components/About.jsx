@@ -152,7 +152,7 @@ export default function About() {
 
             {/* floating stat chip, signature element */}
             <div className={`about-stat-chip ${visible ? 'is-visible' : ''}`}>
-              <span className="about-stat-chip__num">50+</span>
+              <span className="about-stat-chip__num">20+</span>
               <span className="about-stat-chip__label">Events Hosted</span>
             </div>
           </div>

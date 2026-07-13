@@ -56,6 +56,7 @@ const REELS = [
         platform: 'instagram',
         url: 'https://www.instagram.com/reel/DV6WfoRjd3D',
     },
+
 ];
 
 const AUTOPLAY_MS = 5500;
